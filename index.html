@@ -16,19 +16,31 @@
                 <span class="logo-title"> پولاتو | Poolato </span>
             </div>
             <nav class="nav">
-                <a href="#">قابلیت‌ها</a>
-                <a href="#">نصب</a>
-                <a href="#">ارتباط با ما</a>
+                <div class="dropdown-icon">☰</div>
+                <div class="nav-links">
+                    <a href="#tools">ابزارها</a>
+                    <a href="https://app.poolato-co.ir">نصب</a>
+                    <a href="https://t.me/poolato_wallet" target="_blank">ارتباط با ما</a>
+                </div>
             </nav>
         </div>
     </header>
+
+    <a href="https://t.me/poolato_wallet" target="_blank" class="floating-button">
+        <div class="telegram">
+            <img src="/images/telegram.png" alt="Telegram">
+        </div>
+        <span class="text">
+            عضویت در <br /> کانال تلگرام
+        </span>
+    </a>
 
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="heading">پولاتو،<br /> مدیریت کن!</h1>
                 <p class="description">به راحتی با ثبت تراکنش‌های مالی، درآمد و خرج‌هاتون رو مدیریت کنین..</p>
-                <button class="download-btn">نصب برنامه</button>
+                <a href="https://app.poolato-co.ir" class="download-btn">استفاده از برنامه</a>
             </div>
             <div class="devices">
                 <div class="phone-1">
@@ -43,7 +55,9 @@
 
     <section class="feature first">
         <div class="container">
-            <img src="/images/categories.png" alt="Categories" class="feature-image">
+            <div class="feature-image">
+                <img src="/images/categories.png" alt="Categories">
+            </div>
             <div class="feature-content">
                 <h2>امکان شخصی سازی دسته‌بندی‌ها</h2>
                 <p>افزودن، ویرایش و حذف دسته‌بندی‌ها برای مدیریت بهتر تراکنش..</p>
@@ -51,14 +65,16 @@
         </div>
     </section>
 
-    <section class="feature">
+    <section class="feature second">
         <div class="container">
             <div class="feature-content">
                 <h2>بررسی تراکنش‌های مربوط به هر دسته‌بندی</h2>
                 <p>با استفاده از فیلتر زمانی دلخواه می‌توانید تراکنش‌های مربوط به دسته‌بندی خاصی را در آن بازه ببینید...
                 </p>
             </div>
-            <img src="/images/category-transactions.png" alt="Transactions" class="feature-image">
+            <div class="feature-image">
+                <img src="/images/category-transactions.png" alt="Transactions">
+            </div>
         </div>
     </section>
 
@@ -72,7 +88,7 @@
                     <img src="/images/total-chart.png" alt="Total Chart" class="total-chart">
                 </div>
             </div>
-            <div class="feature-content">
+            <div class="feature-content statistics">
                 <h2>مشاهده آماری تاریخچه تراکنش‌ها</h2>
                 <p>امکان مشاهده نمودارهای مختلف تراکنش‌ها با تنظیم فیلتر انتخاب...</p>
             </div>
@@ -83,11 +99,13 @@
         <div class="container">
             <h2>قابل دسترس از هر جا</h2>
             <p>روی تلفن همراه، تبلت یا کامپیوتر شخصی شما...</p>
-            <img src="" alt="All Devices" class="device-icons">
+            <div class="all-devices">
+                <img src="/images/all-devices.png" alt="All Devices" class="device-icons">
+            </div>
         </div>
     </section>
 
-    <section class="features">
+    <section id="tools" class="features">
         <div class="container">
             <h2>ابزارها</h2>
             <div class="feature-icons">
@@ -119,13 +137,13 @@
         <div class="container">
             <h2>دانلود اپلیکیشن پولاتو</h2>
             <div class="platforms">
-                <div class="platform">
+                <div class="platform android">
                     <!-- <img src="android.png" alt="اندروید"> -->
-                    <h3>اندروید</h3>
+                    <a>اندروید</a>
                 </div>
                 <div class="platform">
                     <!-- <img src="iphone.png" alt="تحت وب"> -->
-                    <h3>تحت وب</h3>
+                    <a href="https://app.poolato-co.ir">تحت وب</a>
                 </div>
             </div>
         </div>
@@ -134,6 +152,18 @@
     <footer class="footer">
         <a href="#" class="privacy-link">all rights reserved for poolato-co©</a>
     </footer>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownIcon = document.querySelector(".dropdown-icon");
+            const nav = document.querySelector(".nav");
+
+            dropdownIcon.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 /* sections */
 section {
   width: 100%;
+  padding: 16px 0;
 }
 
 .about-us {
@@ -9,4 +10,13 @@ section {
 
 .about-us-photo {
   width: 100%;
+}
+
+.bg-gray {
+  background-color: #f8f9f9;
+}
+
+h1.heading {
+  font-size: 24px;
+  font-weight: 600;
 }

@@ -109,8 +109,12 @@ body {
 
 /* header */
 .header {
+  position: sticky;
+  top: 0;
   padding: 10px 0;
-  position: relative;
+  box-shadow: 0 2px 2px #87878740;
+  z-index: 1000;
+  background-color: #fff;
 }
 
 .header .container {

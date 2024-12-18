@@ -2,19 +2,19 @@
 @font-face {
   font-family: IranYekan;
   font-weight: 400;
-  src: url("./fonts/iran-yekan-regular.ttf");
+  src: url("./assets/fonts/iran-yekan-regular.ttf");
 }
 
 @font-face {
   font-family: IranYekan;
   font-weight: 700;
-  src: url("./fonts/iran-yekan-bold.ttf");
+  src: url("./assets/fonts/iran-yekan-bold.ttf");
 }
 
 @font-face {
   font-family: IranYekan;
   font-weight: 900;
-  src: url("./fonts/iran-yekan-black.ttf");
+  src: url("./assets/fonts/iran-yekan-black.ttf");
 }
 
 html {
@@ -71,7 +71,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1320px;
+  max-width: 1120px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -81,25 +81,25 @@ body {
 @media (max-width: 1400px) {
   .container {
     width: 100%;
-    max-width: 1140px;
+    max-width: 940px;
   }
 }
 
 @media (max-width: 1200px) {
   .container {
     width: 100%;
-    max-width: 960px;
+    max-width: 860px;
   }
 }
 
 @media (max-width: 992px) {
   .container {
     width: 100%;
-    max-width: 720px;
+    max-width: 620px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 680px) {
   .container {
     width: 100%;
     max-width: 540px;
@@ -198,7 +198,7 @@ body {
   gap: 24px;
 }
 
-@media (max-width: 580px) {
+@media (max-width: 680px) {
   .main {
     margin-bottom: 30px;
   }
@@ -275,7 +275,7 @@ body {
   top: -170px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   .feature {
     top: 0;
     padding: 25px 0;
@@ -286,7 +286,7 @@ body {
   top: 0;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   .feature.second .container .feature-content {
     order: 2;
   }
@@ -317,7 +317,7 @@ body {
 
 .feature-content.statistics {
   text-align: right;
-  min-width: 340px;
+  width: 340px;
 }
 
 .feature-image {
@@ -328,7 +328,7 @@ body {
   width: 100%;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   .feature-image {
     height: 230px;
     overflow: hidden;
@@ -347,12 +347,17 @@ body {
 }
 
 .chart-wrapper {
-  width: 320px;
+  max-width: 320px;
+  width: 100%;
+}
+
+.chart-wrapper img {
+  width: 100%;
 }
 
 .chart {
   position: relative;
-  top: -50px;
+  top: -25px;
   z-index: 2;
   width: 100%;
   border-radius: 18px;
@@ -366,7 +371,12 @@ body {
 }
 
 .total-chart-wrapper {
-  width: 340px;
+  max-width: 340px;
+  width: 100%;
+}
+
+.total-chart-wrapper img {
+  width: 100%;
 }
 
 .total-chart {
@@ -400,7 +410,7 @@ body {
   position: relative;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   .access {
     top: 0;
     margin-bottom: 60px;
@@ -473,7 +483,7 @@ body {
   text-align: left;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   .footer {
     background: #f4f4f4;
     padding: 20px;

@@ -1,0 +1,12 @@
+/* sections */
+section {
+  width: 100%;
+}
+
+.about-us {
+  flex-direction: column;
+}
+
+.about-us-photo {
+  width: 100%;
+}

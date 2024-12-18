@@ -1,19 +1,20 @@
+/* base and reset */
 @font-face {
   font-family: IranYekan;
   font-weight: 400;
-  src: url('./fonts/iran-yekan-regular.ttf');
+  src: url("./fonts/iran-yekan-regular.ttf");
 }
 
 @font-face {
   font-family: IranYekan;
   font-weight: 700;
-  src: url('./fonts/iran-yekan-bold.ttf');
+  src: url("./fonts/iran-yekan-bold.ttf");
 }
 
 @font-face {
   font-family: IranYekan;
   font-weight: 900;
-  src: url('./fonts/iran-yekan-black.ttf');
+  src: url("./fonts/iran-yekan-black.ttf");
 }
 
 html {
@@ -39,6 +40,7 @@ body {
   direction: rtl;
 }
 
+/* floating button */
 .floating-button {
   display: flex;
   align-items: center;
@@ -63,31 +65,63 @@ body {
   border-radius: 50%;
 }
 
-
 .floating-button .telegram img {
   width: 100%;
 }
 
 .container {
-  width: 80%;
-  margin: auto;
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 1400px) {
   .container {
     width: 100%;
-    padding: 0 20px ;
+    max-width: 1140px;
   }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 540px;
+    padding: 0 12px;
+  }
+}
+
+/* header */
+.header {
+  padding: 10px 0;
+  position: relative;
+}
+
+.header .container {
+  justify-content: space-between;
 }
 
 .logo-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px
+  gap: 8px;
 }
 
 .logo-title {
@@ -103,22 +137,7 @@ body {
 }
 
 .logo img {
-  width: 100%
-} 
-
-.header {
-  padding: 10px 0;
-  position: relative;
-}
-
-.header .container {
-  justify-content: space-between; /* Aligns header elements */
-}
-
-.nav a {
-  /* margin: 0 10px;
-  text-decoration: none;
-  color: #333; */
+  width: 100%;
 }
 
 .nav .nav-links {
@@ -136,35 +155,34 @@ body {
 
 @media (max-width: 520px) {
   .nav .nav-links {
-      display: none;
-      flex-direction: column;
-      gap: 10px;
-      background-color: #fff;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      width: 100%;
-      padding: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
   }
 
   .nav .nav-links a:hover {
     background-color: #fafafa;
   }
 
-  /* Show the dropdown icon */
   .dropdown-icon {
-      display: block;
+    display: block;
   }
 
-  /* When nav is active, show the links */
   .nav.active .nav-links {
-      display: flex;
+    display: flex;
   }
 }
 
-.hero {
+/* main */
+.main {
   background-color: #6ecc94;
   color: #fff;
   text-align: center;
@@ -172,7 +190,7 @@ body {
   position: relative;
 }
 
-.hero .container {
+.main .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,24 +199,24 @@ body {
 }
 
 @media (max-width: 580px) {
-  .hero {
+  .main {
     margin-bottom: 30px;
   }
-  .hero .container {
+  .main .container {
     flex-wrap: wrap;
   }
-  .hero .devices {
+  .main .devices {
     width: 100%;
     justify-content: center;
   }
 }
 
-.hero-content {
+.main-content {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   text-align: right;
-  gap: 14px
+  gap: 14px;
 }
 
 .heading {
@@ -211,10 +229,6 @@ body {
   text-align: justify;
   font-size: 1.2em;
   margin-bottom: 20px;
-}
-
-.underlined {
-  text-decoration: underline;
 }
 
 .download-btn {
@@ -252,6 +266,7 @@ body {
   width: 100%;
 }
 
+/* features */
 .feature {
   display: flex;
   align-items: center;
@@ -313,14 +328,12 @@ body {
   width: 100%;
 }
 
-
 @media (max-width: 560px) {
   .feature-image {
     height: 230px;
     overflow: hidden;
   }
 }
-
 
 @media (max-width: 1130px) {
   .chart-images {
@@ -332,8 +345,6 @@ body {
 .chart-images {
   display: flex;
 }
-
-
 
 .chart-wrapper {
   width: 320px;
@@ -428,13 +439,13 @@ body {
   height: 40px;
 }
 
-
 .download .container {
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
+/* platforms */
 .platforms {
   display: flex;
   justify-content: center;
@@ -455,16 +466,17 @@ body {
   margin: 0 10px;
 }
 
+/* footer */
 .footer {
   background: #f4f4f4;
   padding: 20px 100px;
-  text-align: left
+  text-align: left;
 }
 
 @media (max-width: 560px) {
   .footer {
     background: #f4f4f4;
     padding: 20px;
-    text-align: left
+    text-align: left;
   }
 }

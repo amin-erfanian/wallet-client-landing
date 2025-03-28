@@ -10,6 +10,11 @@ section {
 
 .about-us-photo {
   width: 100%;
+  text-align: center;
+}
+
+.about-us-photo img {
+  width: 50%;
 }
 
 .bg-gray {

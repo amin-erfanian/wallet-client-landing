@@ -485,15 +485,42 @@ body {
 
 /* footer */
 .footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #f4f4f4;
   padding: 20px 100px;
   text-align: left;
+}
+
+.footer .telegram {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .telegram-icon {
+  width: 40px;
+}
+
+.footer .telegram-icon img {
+  width: 100%;
+}
+
+.copy-right {
+  flex-shrink: 0;
 }
 
 @media (max-width: 680px) {
   .footer {
     background: #f4f4f4;
     padding: 20px;
-    text-align: left;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .telegram {
+    justify-content: center;
   }
 }

@@ -1,0 +1,111 @@
+/* sections */
+.container {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 64px 0;
+}
+
+.bg-gray {
+  background-color: #f8f9f9;
+}
+
+h1.heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 18px;
+}
+
+.values-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+@media (max-width: 992px) {
+  .values-container {
+    flex-wrap: wrap;
+  }
+}
+
+.values-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(20% - 30px);
+}
+
+@media (max-width: 992px) {
+  .value-item {
+    width: calc(33% - 20px);
+  }
+}
+
+@media (max-width: 730px) {
+  .value-item {
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .value-item {
+    width: calc(100%);
+  }
+}
+
+.value-item-description {
+  text-align: right;
+}
+
+@media (max-width: 730px) {
+  .value-item-description {
+    text-align: justify;
+  }
+}
+
+.value-item-icon {
+  width: 100%;
+  padding: 0 26px;
+  text-align: center;
+}
+
+.value-item-icon img {
+  width: 100%;
+}
+
+.value-item-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.value-item-description {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 24px;
+}
+
+.value-item-description:not(:last-child) {
+  border-left: 2px dashed #aeaeae70;
+}
+
+.teams-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}

@@ -475,7 +475,7 @@ body {
 }
 
 .platform.android {
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
 .platform-icons img {

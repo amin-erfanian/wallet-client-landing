@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poolato | پولاتو</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./fav-icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="./fav-icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./fav-icons/favicon.svg" />
+    <link rel="shortcut icon" href="./fav-icons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./fav-icons/apple-touch-icon.png" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="/index.html">
+                <div class="logo-box">
+                    <img src="assets/images/logo.png" alt="Poolato" class="logo" />
+                    <span class="logo-title"> پولاتو | Poolato </span>
+                </div>
+            </a>
+            <nav class="nav">
+                <div class="dropdown-icon">☰</div>
+                <div class="nav-links">
+                    <a href="#tools">ابزارها</a>
+                    <a href="/install/index.html">نصب</a>
+                    <a href="/about-us/index.html">درباره‌ی ما</a>
+                    <a href="https://t.me/poolato_wallet" target="_blank">ارتباط با ما</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="download">
+        <div class="container">
+            <h2>دانلود اپلیکیشن پولاتو</h2>
+            <div class="platforms">
+                <div class="platform android">
+                    <!-- <img src="assets/android.png" alt="اندروید"> -->
+                    <a href="/downloads/Poolato.apk" download>اندروید</a>
+                </div>
+                <div class="platform">
+                    <!-- <img src="assets/iphone.png" alt="تحت وب"> -->
+                    <a href="https://app.poolato-co.ir">تحت وب</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <a href="https://t.me/poolato_wallet" class="telegram" target="_blank">
+            <div class="telegram-icon">
+                <img src="../assets/images/telegram.png" alt="Telegram" />
+            </div>
+            <span class="telegram-text">
+                عضویت در کانال تلگرام
+            </span>
+        </a>
+
+        <a href="#" class="copy-right">all rights reserved for poolato-co©</a>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const dropdownIcon = document.querySelector(".dropdown-icon");
+            const nav = document.querySelector(".nav");
+
+            dropdownIcon.addEventListener("click", function () {
+                nav.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
